@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= @title %></title>
+
+</head>
+<body>
+<div id="layout">
+  <nav id="menu">
+
+  </nav>
+
+  <div id="main">
+    <div class="header">
+
+    </div>
+    <div class="content">
+
+      <%= yield %>
+
+    </div>
+
+    <footer>
+      <p>
+      There are <%= @users.size %> users with a total of <%= count_interests %> interests.
+      </p>
+
+      <p>
+      <a href="/">Home</a>
+      </p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+  <h2 class="content-subhead"><% @title %></h2>
+        <div class="user-list">
+          <header>
+             <h2> <%= @name.capitalize %>'s info </h2>
+          </header>
+              <li> 
+              <strong>Email</strong>: <%= @users[@name.to_sym][:email] %>
+              </li>
+              <li>
+              <strong>Interests</strong>:
+                <%= @users[@name.to_sym][:interests].join(", ") %>
+              </li>
+              <footer>
+              <br>
+              <p>
+                <% @users.each do |name,v| %>
+                <%="<a href='#{name}'> Link to #{name.capitalize}  </a> " if name.to_s != params[:name] %> 
+                <% end %>
+                <br>
+              </p>
+              </footer>
+
+          </div>

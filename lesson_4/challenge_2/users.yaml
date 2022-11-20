@@ -1,0 +1,25 @@
+---
+:jamy:
+  :email: jamy.rustenburg@gmail.com
+  :interests:
+  - woodworking
+  - cooking
+  - reading
+:john:
+  :email: john@johndoe.com
+  :interests:
+  - dancing
+  - sleeping
+  - eating
+:nora:
+  :email: nora.alnes@yahoo.com
+  :interests:
+  - cycling
+  - basketball
+  - economics
+:hiroko:
+  :email: hiroko.ohara@hotmail.com
+  :interests:
+  - politics
+  - history
+  - birding

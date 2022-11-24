@@ -1,5 +1,5 @@
 require "sinatra"
-require "sinatra/reloader"
+require "sinatra/reloader" if development?
 require "tilt/erubis"
 require "yaml"
 
@@ -27,7 +27,7 @@ end
 
 
 get "/users" do
-  title = "Users"
+  @title = "Users"
   erb :users
 end
 # access specific user page
@@ -48,3 +48,4 @@ get "/users/:name" do
  
   erb :user_info
 end
+

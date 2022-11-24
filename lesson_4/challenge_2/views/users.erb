@@ -1,8 +1,5 @@
-  <h2 class="content-subhead"><% @title %></h2>
-        <div class="user-list">
-          <header>
-             <h2> Users </h2>
-          </header>
+  <h2 class="content-subhead"><%= @title %></h2>
+        <div class="user-list"> 
               <% @users.each do |name,v| %>
               <li>
               <a href="users/<%= name %>"><%= name %></a>
